@@ -105,13 +105,16 @@ var customStyles = makeStyles({
   
   fullFooter: {
     height: "370px",
-    width: "1440px",
+    width: "100%",
     background: "#F1F6F4",
     alignItems: "center",
     justifyContent: "center",
     position:'absolute',
-    bottom:'0%'
+    top:'100vh',
+   
   },
+
+
 
   cardHead: {
     width:"284px",
@@ -168,6 +171,21 @@ var customStyles = makeStyles({
     left:'264px',
     top:'250px'
 
+  },
+  
+  cardReadagain: {
+    color: "#0365F2",
+    fontWeight: 500,
+    textTransform: "none",
+    width: "100px",
+    height: "20px",
+  },
+  finished: {
+    color: "#0365F2",
+    fontWeight: 500,
+    textTransform: "none",
+    width: "62px",
+    height: "20px",
   }
   
 

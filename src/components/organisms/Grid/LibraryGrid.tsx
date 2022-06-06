@@ -1,18 +1,33 @@
 import { Grid } from '@mui/material'
 import React from 'react'
-import {myLibrary}  from '../../../Data/cardData'
-import Card from '../../molecules/card/card'
+import Cardhook from '../../molecules/card/Cardhook'
+
+interface Props{
+  id:number;
+  image:string;
+  title:string;
+  author:string;
+  time:string;
+  read:string;
+  isExplore:string
+}
+
 
 
 const LibraryGrid = () => {
   return (
-    <Grid container direction='column'>
-       {myLibrary.map((lib)=>{
-           return <Card props = {...lib}/>
-       })}
+    /*<Grid container direction='row'>
+    {lib && lib.map((l:Props)=>{
+        return <Cardhook title={l.title} id={l.id} author={l.author}
+                  read={l.read} time={l.time} image={l.image} isExplore={l.isExplore} key={l.id}/>
+    })}
 
-    </Grid>
-  )
+ </Grid>
+*/
+      <></>
+     )
+
 }
+
 
 export default LibraryGrid
